@@ -1,0 +1,1 @@
+# nowy plik python.py
