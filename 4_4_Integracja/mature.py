@@ -10,3 +10,5 @@ if __name__ == "__main__": # Sprawdza, czy skrypt jest uruchamiany bezpośrednio
     age = int(sys.argv[1]) # Pobiera wiek z argumentów wiersza poleceń i konwertuje go na liczbę całkowitą
     print_maturity(age)   # Wywołuje funkcję z podanym wiekiem
 
+print("The program was called with this parameters %s" % sys.argv[1:]) # Drukuje wszystkie argumenty wiersza poleceń przekazane do programu
+
