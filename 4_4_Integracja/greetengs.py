@@ -26,8 +26,7 @@ if __name__ == "__main__": # Sprawdza, czy skrypt jest uruchamiany bezpośrednio
     customized_hello(first_name, last_name)     # Wywołuje funkcję z podanymi danymi
 
     #Tutaj chciałem dodać jeszcze funkcjonalność, polegającą na drukowaniu komunikatow ze wpisano 
-    # niewłaściwą liczbę argumentów, i zapetlić to,  -do zrobienia później.
-    
+    # niewłaściwą liczbę argumentów, i zapetlić to,  -do zrobi
     
     
 
