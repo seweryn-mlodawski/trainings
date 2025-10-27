@@ -9,5 +9,7 @@ def customized_hello(first_name, last_name, gender_prefix='Mr'):
     """
     print("Hello %s %s %s" % (gender_prefix, first_name, last_name))
 
+if __name__ == "__main__":
     help(customized_hello)
+    
     

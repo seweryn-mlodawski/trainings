@@ -1,7 +1,12 @@
 import sys # Importuje moduł sys do obsługi argumentów wiersza poleceń
 import logging  # Importuje moduł logging do obsługi logowania komunikatów
-logging.basicConfig(level=logging.DEBUG) # Ustawia poziom logowania na DEBUG
 
+#----------------------------------
+#logging.basicConfig(level=logging.DEBUG) # Ustawia poziom logowania na DEBUG - bez formatu
+#logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(message)s')  # Ustawia format logowania z czasem i poziomem komunikatu
+#----------------------------------
+
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(message)s', filename="logfile.log") # Ustawia logowanie do pliku logfile.log - jest to kolejna opcja logowania
 def print_maturity(age): # Definiuje funkcję przyjmującą wiek
     if age >= 18:
         logging.info("You are an adult")
