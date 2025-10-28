@@ -8,7 +8,7 @@ class biz_card: #klasa wizytówka
         self.adres=fake.address().replace('\n', ' ') #tu misiałem usunąć znak nowej linii ponieważ adresy mogą mieć wiele linii i tak jest generowane
         self.telefon=fake.phone_number()
         self.email=fake.email()
-        # powyzsze atrybuty klasy biz_card po polsku dla lepszej czytelności
+        # powyzsze atrybuty klasy biz_card po polsku dla lepszej czytelności bo mi się mieszają 
 
 # Lista wizytówek
 business_cards = [] #utworzona pusta lista na wizytówki
