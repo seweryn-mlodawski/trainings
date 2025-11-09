@@ -32,7 +32,7 @@ for wiz in business_cards:
     print()
 
 print("\nSortowanie według imienia:")
-for wiz in sorted(business_cards, key=lambda x: x.imie): 
+for wiz in sorted(business_cards, key=lambda x: x.imie): # sortowanie według imienia 
     print(wiz)
 
 print("\nSortowanie według nazwiska:")
