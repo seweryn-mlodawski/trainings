@@ -50,3 +50,4 @@ contacts = generate_business_cards()
 for contact in contacts[:5]:  # wyświetlamy pierwsze 5 wizytówek
     print(contact)
     print("-" * 30)
+    # dowolny tekst 
