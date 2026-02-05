@@ -12,6 +12,15 @@ class BizCard:
     def __str__(self): # metoda do reprezentacji obiektu jako string
         return f"{self.imie} {self.nazwisko}, {self.email}" 
 
+class Part:
+    def __init__(self):
+        self.part_name = fake.word().capitalize()
+        self.part_number = fake.ean13()
+        self.category = fake.color_name()
+
+    def __str__(self):
+        return f"{self.part_name} ({self.category}) - {self.part_number}" 
+
 # Tworzenie listy wizytówek
 business_cards = [BizCard() for _ in range(5)] # tworzenie 5 wizytówek
 
@@ -32,4 +41,34 @@ print("\nSortowanie według e-maila:")
 for wiz in sorted(business_cards, key=lambda x: x.email):
     print(wiz)
 
-    # stworzyć blizniaczy kod z danymi z pracy np numer czesci nazwa typ/ rodzaj
+# Tworzenie listy części
+parts = [Part() for _ in range(5)]
+
+print("\nCzęści:")
+for p in parts:
+    print(p)
+
+# sortowanie
+print("\nSortowanie według nazwy części:")
+for p in sorted(parts, key=lambda x: x.part_name):
+    print(p)
+
+print("\nSortowanie według numeru części:")
+for p in sorted(parts, key=lambda x: x.part_number):
+    print(p)
+
+print("\nSortowanie według kategorii:")
+for p in sorted(parts, key=lambda x: x.category):
+    print(p)
+
+    # tworzenie listy pracowników
+    employees = [Part() for _ in range(5)]
+
+    print("\nPracownicy i pracownice:")
+    for e in employees:
+        print(e)
+
+    # sortowanie
+    print("\nSortowanie według imienia:")
+    for e in sorted(employees, key=lambda x: x.imie):
+        print(e)
