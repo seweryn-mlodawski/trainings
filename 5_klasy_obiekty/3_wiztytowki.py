@@ -72,3 +72,6 @@ for p in sorted(parts, key=lambda x: x.category):
     print("\nSortowanie według imienia:")
     for e in sorted(employees, key=lambda x: x.imie):
         print(e)
+
+        # tylko pod komita
+        
